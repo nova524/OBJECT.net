@@ -12,16 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OBJECTnet"
         tools:targetApi="31" >
-
-        <!-- MainActivity 추가 -->
-        <activity android:name=".MainActivity"
-            android:exported="true"> <!-- MainActivity를 선언하고 exported 속성을 추가합니다. -->
+        <activity android:name="com.objective.objectnet.MainActivities.MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>

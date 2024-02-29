@@ -1,4 +1,4 @@
-package com.objective.objectnet
+package com.objective.objectnet.MainActivities
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
