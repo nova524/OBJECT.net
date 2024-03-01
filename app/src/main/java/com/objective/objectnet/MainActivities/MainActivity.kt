@@ -1,9 +1,12 @@
 package com.objective.objectnet.MainActivities
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.objective.objectnet.R
 import com.objective.objectnet.login.Login
+import android.widget.Button
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,7 +16,12 @@ class MainActivity : AppCompatActivity() {
         // Login 클래스의 인스턴스 생성
         val login = Login()
         //에베베베
-        // 예시로 로그인 메서드 호출
+
+        val loginButton = findViewById<Button>(R.id.loginButton)
+        loginButton.setOnClickListener {
+            val intent = Intent(this, Login::class.java)
+            startActivity(intent)
+        }
         val username = "example_user"
         val password = "example_password"
         val isLoggedIn = login.loginUser(username, password)
