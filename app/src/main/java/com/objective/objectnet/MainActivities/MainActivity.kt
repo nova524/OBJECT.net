@@ -7,8 +7,12 @@ import com.objective.objectnet.R
 import com.objective.objectnet.login.Login
 import android.widget.Button
 
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -24,12 +28,6 @@ class MainActivity : AppCompatActivity() {
         }
         val username = "example_user"
         val password = "example_password"
-        val isLoggedIn = login.loginUser(username, password)
 
-        if (isLoggedIn) {
-            // 로그인에 성공한 경우 처리할 코드
-        } else {
-            // 로그인에 실패한 경우 처리할 코드
-        }
     }
 }
