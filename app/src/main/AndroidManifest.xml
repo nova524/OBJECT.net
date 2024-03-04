@@ -21,7 +21,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.objective.objectnet.Login"
+        <activity android:name="com.objective.objectnet.LoginActivity"
             android:exported="true">
         </activity>
     </application>

@@ -9,7 +9,7 @@
 
     android:background="@color/bg1"
 
-    tools:context=".Login">
+    tools:context=".LoginActivity">
 
     <LinearLayout
         android:layout_width="354dp"
@@ -73,19 +73,7 @@
             android:textColor="@color/white"
             android:textColorHint="@color/white"
             android:fontFamily="@font/abhayalibre_extrabold" />
-        <EditText
-            android:id="@+id/input_repasswd"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="14dp"
 
-            android:background="@drawable/bg_inputbox"
-
-            android:hint="@string/re_passwd"
-            android:textSize="12sp"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white"
-            android:fontFamily="@font/abhayalibre_extrabold" />
         <Button
             android:id="@+id/btn_submit"
             android:layout_width="match_parent"
