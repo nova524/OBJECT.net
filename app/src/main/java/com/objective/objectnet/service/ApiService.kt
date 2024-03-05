@@ -7,11 +7,8 @@ import retrofit2.Call
 import retrofit2.http.*
 
 interface ApiService {
-    @GET("api/users")
-    fun getAllUsers(): Call<List<User>>
-
     @POST("api/check")
-    fun checkConnection(): Call<Any>
+    fun checkConnection(): Call<Boolean>
 
     @POST("api/login")
     @FormUrlEncoded

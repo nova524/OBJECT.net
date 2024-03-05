@@ -30,6 +30,8 @@ class LoginActivity : AppCompatActivity() {
                 override fun onResponse(call: Call<LoginResponse>, response: Response<LoginResponse>) {
                     if (response.isSuccessful) {
                         val loginResponse = response.body()
+                        System.out.println(loginResponse?.message)
+                        System.out.println(loginResponse?.success)
                         if (loginResponse?.success == true) {
                             // 로그인 성공 시 다음 화면으로 이동
                             val intent = Intent(this@LoginActivity, MainActivity::class.java)
