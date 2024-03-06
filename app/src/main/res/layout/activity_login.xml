@@ -91,4 +91,20 @@
 
     </LinearLayout>
 
+    <Button
+        android:id="@+id/btn_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_submit_button"
+        android:fontFamily="@font/abhayalibre_extrabold"
+
+        android:gravity="center_horizontal"
+
+        android:paddingVertical="12dp"
+        android:text="@string/test"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="8dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

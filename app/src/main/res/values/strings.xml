@@ -7,4 +7,5 @@
     <string name="passwd">passwd</string>
     <string name="re_passwd">re-passwd</string>
     <string name="submit">SUBMIT</string>
+    <string name="test">test</string>
 </resources>
