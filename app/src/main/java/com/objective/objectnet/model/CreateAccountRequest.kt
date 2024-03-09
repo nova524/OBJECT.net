@@ -1,7 +1,6 @@
 package com.objective.objectnet.model
 
-
-data class LoginRequest(
+data class CreateAccountRequest (
     val username: String,
     val password: String
 )

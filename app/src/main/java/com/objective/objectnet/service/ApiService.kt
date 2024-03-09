@@ -1,7 +1,7 @@
 package com.objective.objectnet.service
 
-import com.objective.objectnet.entity.User
-import com.objective.objectnet.model.CheckResponse
+import com.objective.objectnet.model.CreateAccountRequest
+import com.objective.objectnet.model.CreateAccountResponse
 import com.objective.objectnet.model.LoginRequest
 import com.objective.objectnet.model.LoginResponse
 import retrofit2.Call
@@ -16,4 +16,7 @@ interface ApiService {
 
     @POST("api/login")
     fun login(@Body request: LoginRequest): Call<LoginResponse>
+
+    @POST("api/createAccount")
+    fun createAccount(@Body request: CreateAccountRequest): Call<CreateAccountResponse>
 }

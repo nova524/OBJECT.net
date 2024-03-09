@@ -22,25 +22,7 @@ class LoginActivity : AppCompatActivity() {
         val usernameEditText = findViewById<EditText>(R.id.input_name)
         val passwordEditText = findViewById<EditText>(R.id.input_passwd)
         val loginButton = findViewById<Button>(R.id.btn_submit)
-        val testButton = findViewById<Button>(R.id.btn_test)
 
-        testButton.setOnClickListener {
-            RetrofitClient.instance.IDKConnection().enqueue(object : Callback<Boolean> {
-                override fun onResponse(call: Call<Boolean>, response: Response<Boolean>) {
-                    if (response.isSuccessful) {
-                        Toast.makeText(this@LoginActivity, "서버 응답이 성공했습니다.", Toast.LENGTH_SHORT).show()
-                    } else {
-                        // 서버 응답이 실패한 경우
-                        Toast.makeText(this@LoginActivity, "서버 응답이 실패했습니다.", Toast.LENGTH_SHORT).show()
-                    }
-                }
-
-                override fun onFailure(call: Call<Boolean>, t: Throwable) {
-                    // 네트워크 오류 등의 이유로 API 호출 실패 시 처리
-                    Toast.makeText(this@LoginActivity, "네트워크 오류: ${t.message}", Toast.LENGTH_SHORT).show()
-                }
-            })
-        }
 
         loginButton.setOnClickListener {
             val username = usernameEditText.text.toString()

@@ -24,6 +24,9 @@
         <activity android:name="com.objective.objectnet.LoginActivity"
             android:exported="true">
         </activity>
+        <activity android:name="com.objective.objectnet.CreateAccountActivities.CreateAccountActivity"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>

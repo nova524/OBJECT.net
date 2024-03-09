@@ -1,6 +1,6 @@
-package com.objective.objectnet.tutorial
+package com.objective.objectnet.TutorialActivities
 
-class Tutorial {
+class TutorialActivity {
     fun TutorialSetup(username: String, password: String): Boolean {
         return true
     }
