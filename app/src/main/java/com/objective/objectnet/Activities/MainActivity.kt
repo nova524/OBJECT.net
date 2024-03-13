@@ -1,13 +1,12 @@
-package com.objective.objectnet.MainActivities
+package com.objective.objectnet.Activities
 
 import android.content.Intent
+import android.graphics.Rect
 import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.objective.objectnet.CreateAccountActivities.CreateAccountActivity
 import com.objective.objectnet.R
-import com.objective.objectnet.LoginActivity
 import com.objective.objectnet.api.RetrofitClient
 import retrofit2.Call
 import retrofit2.Callback
@@ -18,6 +17,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val rect = Rect()
+        window.decorView.getWindowVisibleDisplayFrame(rect)
+        val top = rect.bottom
+        System.out.println(top)
 
         val loginButton = findViewById<Button>(R.id.Main_loginButton)
         val createAccountButton = findViewById<Button>(R.id.Main_CreateAccountButton)

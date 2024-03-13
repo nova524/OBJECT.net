@@ -4,9 +4,11 @@
 
     <string name="register">로그인</string>
     <string name="signup">회원가입</string>
+    <string name="main">환영합니다!</string>
     <string name="name">name</string>
     <string name="passwd">passwd</string>
     <string name="re_passwd">re-passwd</string>
     <string name="submit">SUBMIT</string>
     <string name="test">test</string>
+    <string name="default_notification_channel_id">default_channel_id</string>
 </resources>

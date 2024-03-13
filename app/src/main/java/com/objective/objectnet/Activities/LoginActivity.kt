@@ -1,12 +1,14 @@
-package com.objective.objectnet
+package com.objective.objectnet.Activities
 
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.objective.objectnet.MainActivities.MainActivity
+import com.objective.objectnet.R
 import com.objective.objectnet.model.LoginResponse
 import com.objective.objectnet.api.RetrofitClient
 import com.objective.objectnet.model.LoginRequest
@@ -22,6 +24,7 @@ class LoginActivity : AppCompatActivity() {
         val usernameEditText = findViewById<EditText>(R.id.input_name)
         val passwordEditText = findViewById<EditText>(R.id.input_passwd)
         val loginButton = findViewById<Button>(R.id.btn_submit)
+
 
 
         loginButton.setOnClickListener {
@@ -56,5 +59,6 @@ class LoginActivity : AppCompatActivity() {
                 }
             })
         }
+
     }
 }

@@ -14,19 +14,32 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OBJECTnet"
         tools:targetApi="31" >
-        <activity android:name="com.objective.objectnet.MainActivities.MainActivity"
+        <activity android:name="com.objective.objectnet.Activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.objective.objectnet.LoginActivity"
+        <activity android:name="com.objective.objectnet.Activities.LoginActivity"
             android:exported="true">
         </activity>
-        <activity android:name="com.objective.objectnet.CreateAccountActivities.CreateAccountActivity"
+        <activity android:name="com.objective.objectnet.Activities.CreateAccountActivity"
             android:exported="true">
         </activity>
+        <activity android:name="com.objective.objectnet.Activities.MessageActivity"
+            android:exported="true">
+        </activity>
+        <service
+            android:name=".service.MessageService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
     </application>
 
 </manifest>

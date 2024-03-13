@@ -9,7 +9,7 @@
 
     android:background="@color/bg1"
 
-    tools:context=".CreateAccountActivities.CreateAccountActivity">
+    tools:context=".Activities.CreateAccountActivity">
 
     <LinearLayout
         android:layout_width="354dp"
